@@ -1,0 +1,59 @@
+:root {
+  --invisible-color: #29282800;
+  --black-blue:  #18191a;
+  --dark-gray-transparent: #292828f5;
+  --dark-gray: #292828;
+  --dark-gray-hover: #2e2c2c;
+  --gray: #555555;
+  --blue: #003049;
+  --red: #d62828;
+  --orange: #f77f00;
+  --yellow: #fcbf49;
+  --light-yellow: #cfcec1;
+  --light-yellow-hover: #fdfcf5;
+  --white: #f7f7f7;
+}
+
+
+/* #999999, #777777, #555555, #333333 and #111111 */
+
+p {
+  color: var(--light-yellow);
+}
+
+h1 {
+  color: var(--light-yellow);
+}
+
+h2 {
+  color: var(--light-yellow);
+}
+
+h3 {
+  color: var(--light-yellow);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    min-width: 500px;
+    line-height: 24px;
+    font-weight: 400;
+    background: rgb(17,40,96);
+    background: linear-gradient(90deg, rgba(17,40,96,1) 25%, rgba(153,13,13,1) 56%, rgba(194,103,4,1) 80%);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+}
